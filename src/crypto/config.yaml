@@ -1,0 +1,12 @@
+extract_staging:
+  model_path: "crypto/models/extract_staging/prod_extract_staging"
+  log_path: "crypto/log/extract_log" 
+extract_serving: 
+  model_path: "crypto/models/extract_serving/prod_extract_serving"
+  log_path: "crypto/log/extract_log"
+load: 
+  chunksize: 1000
+transform: 
+  model_path: "crypto/models/transform"
+meta: 
+  log_table: "pipeline_logs"
